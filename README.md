@@ -43,17 +43,17 @@
 - [앉아서 하는 운동](raw/daily-habits/seated-exercises.md)
 - [Mayo Clinic 가이드라인](raw/daily-habits/mayo-clinic-guidelines.md)
 
-### 👟 [5. 신발 및 깔창 가이드](footwear.md)
+### 👟 [5. 신발 및 깔창 가이드](shoes-insoles.md)
 **발목, 무릎, 고관절 통증 완화를 위한 신발 선택**
-- [신발 타입별 분석](raw/footwear/shoe-types.md)
-- [요족용 깔창 효과](raw/footwear/orthotic-insoles.md)
-- [경도별 신발 추천](raw/footwear/firmness-recommendations.md)
+- [신발 브랜드별 비교](raw/shoes-insoles/brand-comparison.md)
+- [맞춤형 깔창 연구](raw/shoes-insoles/custom-insoles.md)
+- [가격대별 제품 추천](raw/shoes-insoles/price-recommendations.md)
 
-### 🏃‍♂️ [6. 발목 강화 운동 프로그램](exercises.md)
+### 🏃‍♂️ [6. 발목 강화 운동 프로그램](ankle-exercises.md)
 **종합적 발목 통증 개선 운동법**
-- [강화 운동 프로그램](raw/exercises/strengthening-program.md)
-- [운동 횟수 및 강도](raw/exercises/frequency-intensity.md)
-- [진행 단계별 가이드](raw/exercises/progressive-guide.md)
+- [강화 운동 프로그램](raw/ankle-exercises/strengthening-exercises.md)
+- [기초 단계 운동](raw/ankle-exercises/basic-exercises.md)
+- [기능적 운동 가이드](raw/ankle-exercises/functional-exercises.md)
 
 ## 📊 연구 결과 요약
 
