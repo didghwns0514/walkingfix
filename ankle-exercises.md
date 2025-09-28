@@ -24,22 +24,19 @@ flowchart LR
 ### 단계별 프로그램 Overview
 
 ```mermaid
-gantt
-    title 12주 발목 강화 프로그램
-    dateFormat X
-    axisFormat %d주
+flowchart TD
+    A[12주 발목 강화 프로그램] --> B[기초단계<br/>1-4주]
+    A --> C[강화단계<br/>5-8주]
+    A --> D[응용단계<br/>9-12주]
 
-    section 기초단계
-    유연성 향상 : done, flex, 0, 4
-    기본 근력 : active, basic, 2, 4
+    B --> B1[유연성 향상<br/>1-4주]
+    B --> B2[기본 근력<br/>3-6주]
 
-    section 강화단계
-    저항 운동 : future, resist, 4, 4
-    균형 훈련 : future, balance, 6, 4
+    C --> C1[저항 운동<br/>5-8주]
+    C --> C2[균형 훈련<br/>7-10주]
 
-    section 응용단계
-    기능적 운동 : future, functional, 8, 4
-    스포츠 동작 : future, sport, 10, 4
+    D --> D1[기능적 운동<br/>9-12주]
+    D --> D2[스포츠 동작<br/>11-14주]
 ```
 
 ### 프로그램별 목표
@@ -87,9 +84,9 @@ gantt
 ```mermaid
 xychart-beta
     title "12주 운동 프로그램 효과 (%)"
-    x-axis [근력향상, 균형감각, 보행안정, 통증감소, 기능개선]
-    y-axis "개선율" 0 --> 100
-    line [78, 85, 72, 89, 81]
+    x-axis ["근력향상", "균형감각", "보행안정", "통증감소", "기능개선"]
+    y-axis "개선율 (%)" 0 --> 100
+    bar [78, 85, 72, 89, 81]
 ```
 
 **주요 개선 지표** (n=284, 12주 프로그램):

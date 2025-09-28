@@ -23,11 +23,13 @@ flowchart LR
 ### 종합 성능 비교
 
 ```mermaid
-radar
-    title 맞춤형 vs 기성품 깔창 성능 비교
-    "맞춤형" : [9, 10, 8, 6, 9]
-    "기성품" : [6, 4, 7, 9, 5]
-    [효과성, 개인적합, 내구성, 경제성, 만족도]
+quadrantChart
+    title "맞춤형 vs 기성품 깔창 성능 비교"
+    x-axis "비용" --> "치료 효과"
+    y-axis "기본 기능" --> "개인 맞춤성"
+
+    "맞춤형": [0.6, 0.95]
+    "기성품": [0.9, 0.5]
 ```
 
 | 비교 항목 | 맞춤형 깔창 | 기성품 깔창 | 차이 |
@@ -391,17 +393,17 @@ flowchart TD
 ```mermaid
 gantt
     title 맞춤형 깔창 적응 스케줄
-    dateFormat X
-    axisFormat %d일
+    dateFormat YYYY-MM-DD
+    axisFormat %m월%d일
 
     section 1주차
-    30분 착용 : done, day1, 0, 1
-    1시간 착용 : done, day2, 1, 1
-    2시간 착용 : done, day3, 2, 2
-    4시간 착용 : done, day4, 4, 3
+    "30분 착용" : done, day1, 2024-01-01, 2024-01-02
+    "1시간 착용" : done, day2, 2024-01-02, 2024-01-03
+    "2시간 착용" : done, day3, 2024-01-03, 2024-01-05
+    "4시간 착용" : done, day4, 2024-01-05, 2024-01-08
 
     section 2주차
-    6시간 착용 : active, week2, 7, 3
+    "6시간 착용" : active, week2, 2024-01-08, 2024-01-11
     8시간 착용 : active, week2b, 10, 4
 
     section 3주차

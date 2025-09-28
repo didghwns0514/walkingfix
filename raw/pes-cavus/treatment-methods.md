@@ -396,15 +396,15 @@ graph LR
 ```mermaid
 gantt
     title 수술 후 재활 일정
-    dateFormat X
-    axisFormat %d주
+    dateFormat YYYY-MM-DD
+    axisFormat %m월%d일
 
     section 보호기
-    무체중부하 : done, phase1, 0, 2w
-    부분체중부하 : done, phase2, 2w, 4w
+    "무체중부하" : done, phase1, 2024-01-01, 2024-01-15
+    "부분체중부하" : done, phase2, 2024-01-15, 2024-02-12
 
     section 회복기
-    전체중부하 : active, phase3, 6w, 4w
+    "전체중부하" : active, phase3, 2024-02-26, 2024-03-26
     기능 훈련 : active, phase4, 10w, 6w
 
     section 강화기
@@ -438,26 +438,20 @@ gantt
 
 #### 단기 효과 (3개월)
 ```mermaid
-bar
-    title 치료법별 단기 효과 비교
-    x-axis [치료 방법]
-    y-axis [개선률 (%)] 0 --> 100
-    "깔창" : 65
-    "물리치료" : 70
-    "복합 보존적" : 85
-    "수술" : 95
+xychart-beta
+    title "치료법별 단기 효과 비교"
+    x-axis ["깔창", "물리치료", "복합 보존적", "수술"]
+    y-axis "개선률 (%)" 0 --> 100
+    bar [65, 70, 85, 95]
 ```
 
 #### 장기 효과 (2년)
 ```mermaid
-bar
-    title 치료법별 장기 효과 비교
-    x-axis [치료 방법]
-    y-axis [개선률 (%)] 0 --> 100
-    "깔창" : 70
-    "물리치료" : 65
-    "복합 보존적" : 75
-    "수술" : 90
+xychart-beta
+    title "치료법별 장기 효과 비교"
+    x-axis ["깔창", "물리치료", "복합 보존적", "수술"]
+    y-axis "개선률 (%)" 0 --> 100
+    bar [70, 65, 75, 90]
 ```
 
 ### 비용-효과 분석

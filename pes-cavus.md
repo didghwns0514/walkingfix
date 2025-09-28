@@ -143,15 +143,11 @@ flowchart TD
 ### 치료법별 효과 비교
 
 ```mermaid
-bar
-    title 치료법별 효과 비교 (6개월 후)
-    x-axis [치료 방법]
-    y-axis [개선률 (%)] 0 --> 100
-    "기성 깔창" : 45
-    "맞춤 깔창" : 74
-    "물리치료" : 70
-    "복합 보존적" : 85
-    "수술적 치료" : 95
+xychart-beta
+    title "치료법별 효과 비교 (6개월 후)"
+    x-axis ["기성 깔창", "맞춤 깔창", "물리치료", "복합 보존적", "수술적 치료"]
+    y-axis "개선률 (%)" 0 --> 100
+    bar [45, 74, 70, 85, 95]
 ```
 
 ### 단계별 치료 접근
@@ -257,17 +253,17 @@ flowchart LR
 ```mermaid
 gantt
     title 요족 치료 과정 및 예상 결과
-    dateFormat X
-    axisFormat %d개월
+    dateFormat YYYY-MM-DD
+    axisFormat %m월
 
     section 보존적치료
-    깔창 적응 : done, adapt, 0, 1
-    물리치료 : done, pt, 1, 3
-    효과 평가 : done, eval1, 3, 1
+    "깔창 적응" : done, adapt, 2024-01-01, 2024-02-01
+    "물리치료" : done, pt, 2024-02-01, 2024-05-01
+    "효과 평가" : done, eval1, 2024-05-01, 2024-06-01
 
     section 강화치료
-    복합 치료 : active, combined, 4, 3
-    중간 평가 : active, eval2, 6, 1
+    "복합 치료" : active, combined, 2024-06-01, 2024-09-01
+    "중간 평가" : active, eval2, 2024-08-01, 2024-09-01
 
     section 유지관리
     장기 관리 : future, maintain, 7, 12

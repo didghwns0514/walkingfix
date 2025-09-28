@@ -13,12 +13,16 @@
 4. **개인별 맞춤**: 개인의 상태에 맞는 맞춤형 접근
 
 ```mermaid
-pyramid
-    title Mayo Clinic 관절 건강 피라미드
-    "예방 관리" : 40
-    "운동 치료" : 30
-    "생활습관 개선" : 20
-    "의학적 치료" : 10
+flowchart TD
+    A["Mayo Clinic 관절 건강 피라미드"] --> B["예방 관리 (40%)"]
+    A --> C["운동 치료 (30%)"]
+    A --> D["생활습관 개선 (20%)"]
+    A --> E["의학적 치료 (10%)"]
+
+    style B fill:#ff9999
+    style C fill:#ffcc99
+    style D fill:#99ccff
+    style E fill:#99ff99
 ```
 
 ---
@@ -249,18 +253,18 @@ mindmap
 ```mermaid
 gantt
     title Mayo Clinic 4주 기초 적응 프로그램
-    dateFormat X
-    axisFormat %d주차
+    dateFormat YYYY-MM-DD
+    axisFormat %m월%d일
 
     section 운동 적응
-    기본 스트레칭 : done, stretch, 0, 4
-    가벼운 걷기 : done, walk, 0, 4
-    기본 근력 운동 : active, strength, 2, 2
+    "기본 스트레칭" : done, stretch, 2024-01-01, 2024-01-29
+    "가벼운 걷기" : done, walk, 2024-01-01, 2024-01-29
+    "기본 근력 운동" : active, strength, 2024-01-15, 2024-01-29
 
     section 생활습관
-    수면 패턴 조정 : done, sleep, 0, 4
-    영양 개선 : active, nutrition, 1, 3
-    스트레스 관리 : active, stress, 2, 2
+    "수면 패턴 조정" : done, sleep, 2024-01-01, 2024-01-29
+    "영양 개선" : active, nutrition, 2024-01-08, 2024-01-29
+    "스트레스 관리" : active, stress, 2024-01-15, 2024-01-29
 ```
 
 **주차별 목표**:

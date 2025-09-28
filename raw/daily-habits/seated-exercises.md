@@ -164,18 +164,18 @@ pie title 회의 중 가능한 운동 비율
 ```mermaid
 gantt
     title 점심시간 15분 운동 스케줄
-    dateFormat X
-    axisFormat %d분
+    dateFormat YYYY-MM-DD
+    axisFormat %H:%M
 
     section 워밍업
-    목과어깨 : done, warmup, 0, 3
+    "목과어깨" : done, warmup, 2024-01-01, 2024-01-01
 
     section 상체운동
-    척추운동 : active, upper, 3, 4
-    팔운동 : active, arms, 7, 2
+    "척추운동" : active, upper, 2024-01-01, 2024-01-01
+    "팔운동" : active, arms, 2024-01-01, 2024-01-01
 
     section 하체운동
-    다리운동 : pending, lower, 9, 4
+    "다리운동" : pending, lower, 2024-01-01, 2024-01-01
 
     section 마무리
     전신스트레칭 : pending, cooldown, 13, 2
@@ -276,14 +276,11 @@ graph TD
 
 #### 초급 (1-2주차)
 ```mermaid
-bar
-    title 초급 운동 강도
-    x-axis [운동 유형]
-    y-axis [시간(분)] 0 --> 10
-    "목/어깨" : 3
-    "척추" : 2
-    "팔" : 2
-    "다리" : 3
+xychart-beta
+    title "초급 운동 강도"
+    x-axis ["목/어깨", "척추", "팔", "다리"]
+    y-axis "시간(분)" 0 --> 10
+    bar [3, 2, 2, 3]
 ```
 
 **특징**:

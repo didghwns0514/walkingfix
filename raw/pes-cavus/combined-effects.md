@@ -94,14 +94,11 @@ graph LR
 
 #### 근육 피로도 분석
 ```mermaid
-bar
-    title 복합 질환에서의 근육 피로도
-    x-axis [근육군]
-    y-axis [피로 지수] 0 --> 200
-    "정상군" : 100
-    "요족군" : 140
-    "무릎외반군" : 130
-    "복합군" : 185
+xychart-beta
+    title "복합 질환에서의 근육 피로도"
+    x-axis ["정상군", "요족군", "무릎외반군", "복합군"]
+    y-axis "피로 지수" 0 --> 200
+    bar [100, 140, 130, 185]
 ```
 
 ---
@@ -198,16 +195,16 @@ graph LR
 ```mermaid
 gantt
     title 복합 질환의 진행 속도 비교
-    dateFormat X
-    axisFormat %d년
+    dateFormat YYYY-MM-DD
+    axisFormat %Y년
 
     section 단일 질환
-    요족 단독 : done, single1, 0, 10
-    무릎외반 단독 : done, single2, 0, 8
+    "요족 단독" : done, single1, 2024-01-01, 2034-01-01
+    "무릎외반 단독" : done, single2, 2024-01-01, 2032-01-01
 
     section 복합 질환
-    복합 질환 : crit, combined, 0, 5
-    중증 단계 : crit, severe, 3, 5
+    "복합 질환" : crit, combined, 2024-01-01, 2029-01-01
+    "중증 단계" : crit, severe, 2027-01-01, 2032-01-01
 ```
 
 **주요 특징**:
@@ -342,14 +339,11 @@ graph TD
 
 #### 치료 반응률 비교
 ```mermaid
-bar
-    title 치료 반응률 비교 (6개월 후)
-    x-axis [치료 방법]
-    y-axis [성공률 (%)] 0 --> 90
-    "요족 단독" : 85
-    "무릎외반 단독" : 80
-    "복합 질환" : 65
-    "복합 특화 치료" : 78
+xychart-beta
+    title "치료 반응률 비교 (6개월 후)"
+    x-axis ["요족 단독", "무릎외반 단독", "복합 질환", "복합 특화 치료"]
+    y-axis "성공률 (%)" 0 --> 90
+    bar [85, 80, 65, 78]
 ```
 
 #### 기능 개선 지표
