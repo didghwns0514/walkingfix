@@ -404,10 +404,10 @@ gantt
 
     section 2주차
     "6시간 착용" : active, week2, 2024-01-08, 2024-01-11
-    8시간 착용 : active, week2b, 10, 4
+    "8시간 착용" : active, week2b, 2024-01-11, 2024-01-15
 
     section 3주차
-    전일 착용 : future, week3, 14, 7
+    "전일 착용" : future, week3, 2024-01-15, 2024-01-22
 ```
 
 **1주차 주의사항**:
