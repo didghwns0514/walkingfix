@@ -392,7 +392,7 @@ flowchart TD
 #### 1주차: 초기 적응기
 ```mermaid
 gantt
-    title 맞춤형 깔창 적응 스케줄
+    title "맞춤형 깔창 적응 스케줄"
     dateFormat YYYY-MM-DD
     axisFormat %m월%d일
 
